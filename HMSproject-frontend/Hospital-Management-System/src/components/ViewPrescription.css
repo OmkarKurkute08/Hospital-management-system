@@ -1,0 +1,218 @@
+@media (max-width: 700px) {
+    .container {
+      padding: 0 20px;
+    }
+  }
+  .page {
+    margin-top: 100px;
+    margin-left: 12px;
+    background: #e5e5e5;
+    padding: 40px;
+    height: 100vh;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+  @media (max-width: 1208px) {
+    .page {
+      margin-left: 0;
+      border-radius: 0;
+    }
+  }
+  @media (max-width: 485px) {
+    .page {
+      padding: 40px 20px;
+    }
+  }
+  
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .dashboard .banner:first-child {
+    height: 35vh;
+    display: flex;
+    gap: 20px;
+  }
+  .dashboard .banner:first-child .firstBox {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background: #b5b5ff;
+    padding: 20px 20px 0 10px;
+  }
+  .dashboard .banner:first-child .firstBox img {
+    height: 100%;
+    flex: 1;
+  }
+  .dashboard .banner:first-child .firstBox .content {
+    flex: 2;
+  }
+  .dashboard .banner:first-child .firstBox .content div {
+    display: flex;
+    align-items: center;
+    font-size: 34px;
+    margin-bottom: 12px;
+  }
+  .dashboard .banner:first-child .firstBox .content div p {
+    margin-right: 10px;
+    font-size: 34px;
+  }
+  .dashboard .banner:first-child .firstBox .content div h5 {
+    color: #ff008d;
+  }
+  .dashboard .banner:first-child .firstBox .content p {
+    font-size: 16px;
+  }
+  .dashboard .banner:first-child .secondBox {
+    background: #3939d9f2;
+    color: #fff;
+  }
+  .dashboard .banner:first-child .thirdBox {
+    color: #ff008d;
+    background: #fff;
+  }
+  .dashboard .banner:first-child .secondBox,
+  .dashboard .banner:first-child .thirdBox {
+    flex: 1;
+    border-radius: 20px;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+  }
+  .dashboard .banner:first-child .secondBox p,
+  .dashboard .banner:first-child .thirdBox p {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .dashboard .banner:first-child .secondBox h3,
+  .dashboard .banner:first-child .thirdBox h3 {
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  .dashboard .banner:last-child {
+    height: 65vh;
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    /* overflow: hidden; */
+  }
+  .dashboard .banner:last-child h5 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #111;
+  }
+  .dashboard .banner table {
+    width: 100%;
+    color: #111;
+    font-size: 20px;
+  }
+  .dashboard .banner table select {
+    font-size: 20px;
+    border: none;
+    width: 100%;
+    font-weight: 600;
+  }
+  .dashboard table td svg {
+    display: flex;
+    margin: 0 auto;
+  }
+  .dashboard table td .green {
+    font-size: 20px;
+    color: #16a34a;
+  }
+  .dashboard table td .red {
+    font-size: 20px;
+    color: #dc2626;
+  }
+  .dashboard .banner table select:focus {
+    outline: none;
+  }
+  .dashboard .banner table .value-pending {
+    color: #eab308;
+  }
+  .dashboard .banner table .value-accepted {
+    color: #16a34a;
+  }
+  .dashboard .banner table .value-rejected {
+    color: #dc2626;
+  }
+  .dashboard .banner table thead {
+    text-align: justify;
+    padding: 12px 0;
+  }
+  .dashboard .banner table thead th {
+    padding: 12px 0;
+  }
+  .dashboard .banner table tbody td {
+    padding: 12px 0;
+  }
+  @media (max-width: 1376px) {
+    .dashboard .banner:first-child .firstBox .content div,
+    .dashboard .banner:first-child .firstBox .content div p {
+      font-size: 26px;
+    }
+    .dashboard .banner:first-child .firstBox .content p {
+      font-size: 14px;
+    }
+    .dashboard .banner:first-child .secondBox p,
+    .dashboard .banner:first-child .thirdBox p,
+    .dashboard .banner:first-child .secondBox h3,
+    .dashboard .banner:first-child .thirdBox h3 {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 1020px) {
+    .dashboard {
+      height: fit-content;
+    }
+    .dashboard .banner:first-child,
+    .dashboard .banner:last-child {
+      flex-wrap: wrap;
+      height: fit-content;
+    }
+    .dashboard .banner:first-child .firstBox {
+      flex: none;
+      width: 100%;
+      height: 265px;
+    }
+    .dashboard .banner:first-child .secondBox,
+    .dashboard .banner:first-child .thirdBox {
+      height: 175px;
+    }
+  }
+  @media (max-width: 620px) {
+    .dashboard .banner:first-child .secondBox,
+    .dashboard .banner:first-child .thirdBox {
+      width: 100%;
+      flex: none;
+    }
+  }
+  @media (max-width: 485px) {
+    .dashboard .banner:first-child .firstBox {
+      flex-direction: column;
+      height: fit-content;
+      padding: 20px;
+    }
+    .dashboard .banner:first-child .firstBox img {
+      width: 270px;
+      height: 270px;
+      margin-bottom: 25px;
+    }
+    .dashboard .banner:first-child .firstBox div {
+      justify-content: center;
+    }
+  }
+  .image {
+      width: 156px; /* 24 * 4 (Tailwind spacing) */
+      height: 156px;
+      background-color: #bae6fd; /* Tailwind sky-200 */
+      border-radius: 50%; /* Full rounded */
+      overflow: hidden;
+      margin: 10px;
+  }
